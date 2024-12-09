@@ -1,7 +1,6 @@
 language: python
 python:
-  - "3.10"
-before_script:
-  - npm install
+- "3.4"
+- "3.5"
 script:
-  - python test/test_suite.py
+- python test/test_suite.py
