@@ -1,6 +1,16 @@
 language: python
 python:
-- "3.4"
-- "3.5"
-script:
-- python test/test_suite.py
+  - "3.7"
+  - "3.8"
+  - "3.9"
+
+# Command to install dependencies
+install:
+  - pip install -r requirements.txt
+  - pip install pytest pytest-cov
+  
+# Specify branches to build
+branches:
+  only:
+    - main
+    - step3
