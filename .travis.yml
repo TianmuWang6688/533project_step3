@@ -1,11 +1,5 @@
 language: python
 python:
-  - "3.7"
-  - "3.8"
   - "3.9"
-
-# Command to install dependencies
-install:
-  - pip install coverage
 script:
-  true
+  - python test/test_suite.py
